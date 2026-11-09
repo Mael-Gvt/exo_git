@@ -8,7 +8,7 @@ let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
 function saveReservations(){localStorage.setItem("reservations",JSON.stringify(reservations));}
 function renderReservations(items=reservations){
   list.innerHTML="";
-  count.textContent=`${reservations.length} réservation(s)`;
+  count.textContent=`${reservations.length} réservation(s) au total`;
   emptyState.hidden=items.length>0;
   items.forEach((reservation)=>{
     const item=document.createElement("li"); item.className="reservation-item";
