@@ -10,3 +10,4 @@ Ouvrir `index.html` dans un navigateur. Aucune installation nécessaire.
 - Conserver les données dans le localStorage
 
 Les branches et commits du dépôt sont préparés pour le TP Git avancé.
+tests_pour_commit
