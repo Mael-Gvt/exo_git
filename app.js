@@ -9,7 +9,7 @@ function saveReservations(){localStorage.setItem("reservations",JSON.stringify(r
 function renderReservations(items=reservations){
   list.innerHTML="";
   count.textContent=`${reservations.length} réservation(s) au total`;
-  emptyState.hidden=items.length>0;
+  emptyState.hidden=false; // BUG : le message vide reste affiche
   items.forEach((reservation)=>{
     const item=document.createElement("li"); item.className="reservation-item";
     item.innerHTML=`<div><strong>${reservation.customer}</strong><br><small>${reservation.service} · ${reservation.date}</small></div><button class="delete-button" data-id="${reservation.id}" type="button">Supprimer</button>`;
