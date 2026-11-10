@@ -14,4 +14,5 @@ tests_pour_commit
 tests_changements
 blabla
 commit1
-bug à résoudre
+commit2
+commit3
